@@ -1,0 +1,24 @@
+mutation MyMutation(
+  $title: String!
+  $genre: String!
+  $description: String!
+  $image_path: String!
+  $rating: Int!
+) {
+  insert_movie_one(
+    object: {
+      title: $title
+      genre: $genre
+      description: $description
+      image_path: $image_path
+      rating: $rating
+    }
+  ) {
+    id
+    title
+    rating
+    image_path
+    genre
+    description
+  }
+}

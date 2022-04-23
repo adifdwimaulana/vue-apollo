@@ -1,0 +1,10 @@
+query MyQuery {
+  movie {
+    id
+    title
+    rating
+    image_path
+    genre
+    description
+  }
+}

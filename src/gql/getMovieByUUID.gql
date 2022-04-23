@@ -1,0 +1,9 @@
+query MyQuery($id: uuid!) {
+  movie_by_pk(id: $id) {
+    title
+    rating
+    image_path
+    description
+    genre
+  }
+}
